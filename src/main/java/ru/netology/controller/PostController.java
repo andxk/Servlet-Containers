@@ -6,7 +6,8 @@ import ru.netology.exception.NotFoundException;
 import ru.netology.model.Post;
 import ru.netology.service.PostService;
 
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletResponse;
+//import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Reader;
 
