@@ -9,7 +9,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/posts")
 public class PostController {
-    public static final String APPLICATION_JSON = "application/json";
     private final PostService service;
 
     public PostController(PostService service) {
@@ -31,12 +30,9 @@ public class PostController {
         service.save(post);
         return post;
     }
-//    public void save(@RequestBody Post post) {
-//        service.save(post);
-//    }
 
     @DeleteMapping("/{id}")
-    public void removeById(@PathVariable long id) {
-        service.removeById(id);
+    public String removeById(@PathVariable long id) {
+        return service.removeById(id);
     }
 }
