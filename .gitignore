@@ -43,7 +43,8 @@ captures/
 *.zip
 *.tar.gz
 *.rar
+*.7z
 
 ### Gradle ###
 !gradle/wrapper/gradle-wrapper.jar
-/pom.xml-rab.7z
+
